@@ -3,7 +3,10 @@ import '../index.css'
 
 const Auth=()=>{
     return(
-        <div>Auth Page</div>
+        <div>
+            <h1>this is auth</h1>
+            
+            </div>
     )
 }
 
