@@ -1,0 +1,180 @@
+/* ─── HEADER BAR ─── */
+
+.site-header {
+  height: 56px;
+  width: min(100% - 64px, 1538px);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 5;
+}
+
+/* ─── LEFT: LOGO ─── */
+
+.nav-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.brand-mark {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  transition: opacity 0.2s ease;
+}
+
+.brand-mark:hover {
+  opacity: 0.8;
+}
+
+/* ─── CENTER: NAV LINKS ─── */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-nav a {
+  color: #b0b0b0;
+  font-size: 14px;
+  font-weight: 500;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #ffffff;
+}
+
+/* DROPDOWN CHEVRON */
+
+.nav-chevron {
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+/* ─── RIGHT: BUTTONS ─── */
+
+.nav-actions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.nav-button {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-1px);
+}
+
+/* DARK / MUTED BUTTON */
+
+.nav-button-muted {
+  border: 1px solid #333;
+  background: #0a0a0a;
+  color: #e0e0e0;
+}
+
+.nav-button-muted:hover {
+  background: #161616;
+}
+
+/* LIGHT BUTTON */
+
+.nav-button-light {
+  background: #f0f0f0;
+  color: #111;
+  border: 1px solid #f0f0f0;
+}
+
+.nav-button-light:hover {
+  background: #fff;
+}
+
+/* ─── TABLET ─── */
+
+@media (max-width: 900px) {
+  .site-header {
+    width: min(100% - 40px, 700px);
+    height: 52px;
+  }
+
+  .main-nav {
+    gap: 17px;
+  }
+
+  .main-nav a {
+    font-size: 13px;
+  }
+
+  .brand-mark {
+    font-size: 16px;
+  }
+
+  .nav-button {
+    padding: 0 11px;
+    font-size: 12px;
+  }
+}
+
+/* ─── MOBILE ─── */
+
+@media (max-width: 620px) {
+  .site-header {
+    width: calc(100% - 36px);
+    height: 48px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: 7px;
+  }
+
+  .nav-button {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+
+  .nav-button:first-child {
+    display: none;
+  }
+}
