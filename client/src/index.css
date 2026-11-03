@@ -1,8 +1,31 @@
 @import "tailwindcss";
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background: #080808;
+@import "tailwindcss";
+
+/* Global design tokens */
+@theme {
+    --color-brand: #5cffc8;
+  --color-dark: #080808;
+  --color-card: #111111;
+  --color-muted: #a5aaa8;
+}
+
+/* Global base styles */
+@layer base {
+  html {
+    font-family: var(--font-inter);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
 }

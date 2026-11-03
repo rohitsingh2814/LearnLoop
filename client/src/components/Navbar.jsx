@@ -32,10 +32,10 @@ const Navbar = () => {
 
       {/* RIGHT: ACTIONS */}
       <div className="nav-actions">
-        <a href="#login" className="nav-button nav-button-muted">
+        <a href="/auth" className="nav-button nav-button-muted">
           Log In
         </a>
-        <a href="#signup" className="nav-button nav-button-light">
+        <a href="/auth" className="nav-button nav-button-light">
           Sign Up
         </a>
       </div>
