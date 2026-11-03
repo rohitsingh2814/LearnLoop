@@ -44,7 +44,7 @@ const Home = () => {
           <CrystalizedBall
             preset="frost"
             color="#BFE6FF"
-            size={0.80}
+            size={0.90}
             crackle={0.3}
             fill={0.6}
             interactive
