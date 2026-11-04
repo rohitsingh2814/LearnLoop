@@ -40,7 +40,7 @@ const Home = () => {
         </div>
 
         {/* Center - Crystalized Ball Animation */}
-        <div className="hero-visual relative w-full h-[450px]">
+        <div className="hero-visual relative w-full h-112.5">
           <CrystalizedBall
             preset="frost"
             color="#BFE6FF"

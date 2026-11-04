@@ -1,8 +1,45 @@
+/* Universal font Inter hai */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background: #080808;
+
+
+/* Global design tokens */
+@theme {
+  --color-brand: #5cffc8;
+  --color-dark: #080808;
+  --color-card: #111111;
+  --color-muted: #a5aaa8;
+
+  /* Universal font */
+  --font-inter: "Inter", sans-serif;
+}
+
+
+
+/* Global base styles */
+@layer base {
+  * {
+    font-family: var(--font-inter);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
 }
