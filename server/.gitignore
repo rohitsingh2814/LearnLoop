@@ -1,1 +1,16 @@
 node_modules
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+
+# Logs
+*.log
